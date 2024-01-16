@@ -1,0 +1,224 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    margin: 0;
+}
+
+.logo > p {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    place-content: center space-between;
+    place-items: center;
+    padding: 10px 50px 10px 50px;
+    background-color: #202020;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.leftmenu> .menu {
+    font-size: 20px;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 10px;
+    -webkit-animation: 200ms; 
+    transition: 200ms;
+}
+.leftmenu> .menu:hover {
+    border-bottom: #ffffff solid 3px;
+}
+
+.menuactive {
+    font-size: 20px;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 10px;
+    border-bottom: #ffffff solid 3px;
+}
+
+/* ----------- CONTAINER ----------- */
+
+.container{
+    background: #3f3f3f;
+}
+
+.container>.part {
+    padding-top: 58px;
+    height: 40rem;
+    overflow: hidden;
+    
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* ------------ About ----------- */
+
+.container .about {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.container #about {
+    background: #000;
+}
+
+.about > .text {
+    /* margin-top: -400px; */
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.about > .text > p{
+    text-shadow: #000000 0px 0px 5px;
+    margin-bottom: 50px;
+}
+
+/* --------- Button next ------------- */
+
+.nextpage{
+    font-size: 15px;
+    border: #ffffff solid 1px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    -webkit-animation: 400ms;
+    transition: 400ms;
+}
+.nextpage:hover{
+    color: #202020;
+    background: #ffffff;
+}
+
+/* ------------- */
+
+.text > .titre {
+    font-size: 50px;
+    font-weight: 300;
+    animation-name: textcoloranim;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.text > .detail {
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #0000007c;
+}
+.about > .backg {
+    width: 100%;
+    align-self: center;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    float: inline-end;
+}
+
+/* ------------- Project ----------- */
+
+#project {
+    background-color: #202020;
+}
+
+.insertProj{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-bottom: 50px;
+}
+
+.insertProj> .card{
+    width: 80%;
+    margin-top: 20px;
+    height: 100px;
+    border: #fbfbfb solid 1px;
+    justify-self: center;
+    padding: 10px;
+}
+.insertProj> .card:hover{
+    border: #202020 solid 1px;
+    color: #202020;
+    justify-self: center;
+    background-color: #3f3f3f;
+    background-position: center;
+    background-size: contain;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-animation: miozongozona 0.8s both;
+    animation: miozongozona 1s both;
+    transition: 300ms;
+}
+
+.card > .titreproj {
+    font-size: 25px;
+}
+.card > .descr{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.part > .listeproject{
+    width: 100%;
+}
+
+.btngroupe{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.git {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+ /************* Animation ****************/
+
+@keyframes textcoloranim {
+    0% {color: #ff7171;}
+    25% {color: #ffd998;}
+    50% {color: #6fecff;}
+    75% {color: #f56720;}
+    100% {color: #ff6f6f;}
+}
+
+@-webkit-keyframes miozongozona {
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    15% {
+        -webkit-transform: translateX(-30px) rotate(6deg);
+        transform: translateX(-30px) rotate(6deg);
+    }
+    30% {
+        -webkit-transform: translateX(15px) rotate(-6deg);
+        transform: translateX(15px) rotate(-6deg);
+    }
+    45% {
+        -webkit-transform: translateX(-15px) rotate(3.6deg);
+        transform: translateX(-15px) rotate(3.6deg);
+    }
+    60% {
+        -webkit-transform: translateX(9px) rotate(-2.4deg);
+        transform: translateX(9px) rotate(-2.4deg);
+    }
+    75% {
+        -webkit-transform: translateX(-6px) rotate(1.2deg);
+        transform: translateX(-6px) rotate(1.2deg);
+    }
+}
