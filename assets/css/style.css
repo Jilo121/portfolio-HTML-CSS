@@ -19,7 +19,8 @@
     place-content: center space-between;
     place-items: center;
     padding: 10px 50px 10px 50px;
-    background-color: #202020;
+    background-color: #202020 ;
+    backdrop-filter: blur(6px);
     color: #ffffff;
     z-index: 1;
 }
@@ -121,6 +122,22 @@
     float: inline-end;
 }
 
+/* ------------- Competence -------------*/
+
+.langage_container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.langage_container > .card {
+    height: 100px;
+    width: 100px;
+}
+.langage_container > .card > .lname{
+    height: 70%;
+}
+
 /* ------------- Project ----------- */
 
 #project {
@@ -170,9 +187,11 @@
 }
 
 .btngroupe{
+    position: inherit;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    bottom: 0;
 }
 
 .git {
@@ -181,6 +200,51 @@
     right: 0;
     top: 0;
     z-index: -1;
+}
+
+/* ------------ Contact ------------- */
+#contact, #competence{
+    display: grid;
+}
+#contact > .contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.formulaire {
+    width: 100%;
+    height: 80%;
+}
+.formulaire > form {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+input[type=text], input[type=email], textarea{
+    width: 100%;
+    height: 50px;
+    resize: none;
+}
+
+form > button {
+    background: #0f6471;
+    margin-top: 20px;
+    border: none;
+    padding: 10px 0 10px 0;
+    cursor: pointer;
+}
+form > button:hover {
+    background: #148495;
 }
 
  /************* Animation ****************/

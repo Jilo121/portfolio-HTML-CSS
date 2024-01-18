@@ -37,25 +37,51 @@
         </div>
         <div name="competence" id="competence" class="part">
             <h1>COMPETENCE</h1>
-
-            <a href="#project" class="nextpage">Voir mes projets</a>
+            <div class="cmp_container">
+                <h2>Langage Et Framework:</h2>
+                <div class="langage_container"></div>
+            </div>
+            <div class="btngroupe">
+                <a href="#project" class="nextpage">Voir mes projets</a>
+            </div>
         </div>
         <div name="project" id="project" class="part">
             <h1>PROJETS</h1>
             <div class="insertProj"></div>
-            <a href="#contact" class="nextpage">Me contacter</a>
+            <div class="btngroupe">
+                <a href="#contact" class="nextpage">Me contacter</a>
+            </div>
         </div>
         <div name="contact" id="contact" class="part">
             <h1>CONTACT</h1>
-            <div class="coordone">
-                Facebook: Nosy Hery Hasina
+            <div class="contact">
+                <div class="coordone">
+                    <div class="iconlist">
+                        <a href="http://fb.me/taotrano.nosy"><img src="./assets/img/fb.PNG" alt="facebook icon" class="icon"></a>
+                        <a href="http://linedin.com/feed/"><img src="./assets/img/in.PNG" alt="facebook icon" class="icon"></a>
+                        <a href="https://github.com/Jilo121"><img src="./assets/img/gmail.PNG" alt="facebook icon" class="icon"></a>
+                    </div>
+                    <div class="detail">
+                        <p>Adresse: Nanisana, Antananarivo, Madagascar</p>
+                    </div>
+                </div>
+                <div class="formulaire">
+                    <form action="">
+                        <h2>Envoyer un email</h2>
+                        <label for="email" class="label">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <label for="object">Objet:</label>
+                        <input type="text" name="object" id="object" placeholder="Objet">
+                        <label for="subject">Contenu:</label>
+                        <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Contenu"></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+                
             </div>
-            <div class="formulaire">
-                <form action="">
-                    <label for="email" class="label"></label>
-                </form>
+            <div class="btngroupe">
+                <a href="#about" class="nextpage">Revenir en haut</a>
             </div>
-            <a href="#about" class="nextpage">Revenir en haut</a>
         </div>
     </div>
     <div class="footer"></div>
