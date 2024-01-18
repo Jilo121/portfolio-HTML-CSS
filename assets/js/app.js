@@ -10,8 +10,8 @@ let langage = {
 }
 
 let others = {
-    'name':["Archicad","Lumion","3DS Max","Twinmotion","Adobe audition","Photoshop"],
-    'image':["archicad.png","lumion.png","3ds.png","tm.png","au.png","ps.png"]
+    'name':["Archicad","Lumion","3DS Max","Twinmotion","Adobe Audition","Adobe Photoshop","Adobe XD"],
+    'image':["archicad.png","lumion.png","3ds.png","tm.png","au.png","ps.png","xd.png"]
 }
 
 const span = document.querySelector('.insertProj');
