@@ -124,17 +124,17 @@
 
 /* ------------- Competence -------------*/
 
-.langage_container {
+.langage_container,.others_container {
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
 
-.langage_container > .card {
+.langage_container > .card,.others_container > .card {
     height: 100px;
     width: 100px;
 }
-.langage_container > .card > .lname{
+.langage_container > .card > .lname, .others_container > .card > .lname{
     height: 70%;
 }
 

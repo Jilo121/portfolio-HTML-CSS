@@ -5,12 +5,18 @@ let project = {
 }
 
 let langage = {
-    'name':["HTML","CSS","Javascript","Python","React Js","React Native","Laravel","Symfony","Photoshop"],
-    'image':["html.png","css.png","js.png","py.png","react.png","react.png","laravel.png","symfony.png","ps.png"]
+    'name':["HTML","CSS","Javascript","Python","React Js","React Native","Laravel","Symfony"],
+    'image':["html.png","css.png","js.png","py.png","react.png","react.png","laravel.png","symfony.png"]
+}
+
+let others = {
+    'name':["Archicad","Lumion","3DS Max","Twinmotion","Adobe audition","Photoshop"],
+    'image':["archicad.png","lumion.png","3ds.png","tm.png","au.png","ps.png"]
 }
 
 const span = document.querySelector('.insertProj');
 const comp_langage = document.querySelector('.langage_container');
+const comp_others = document.querySelector('.others_container');
 
 
 for (i=0;i<project.name.length;i++) {
@@ -20,4 +26,8 @@ for (i=0;i<project.name.length;i++) {
 for (i=0;i<langage.name.length;i++) {
     const div = "<div class='card'><img src='./assets/img/"+ langage.image[i] +"' alt='"+ langage.image[i] +"' class='lname'><p class='descr'>"+ langage.name[i] + "</p></div>"
     comp_langage.innerHTML += div
+}
+for (i=0;i<others.name.length;i++) {
+    const div = "<div class='card'><img src='./assets/img/"+ others.image[i] +"' alt='"+ others.image[i] +"' class='lname'><p class='descr'>"+ others.name[i] + "</p></div>"
+    comp_others.innerHTML += div
 }
